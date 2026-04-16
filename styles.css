@@ -1,0 +1,218 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+*:not(dialog) {
+  margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+/* END OF THE RESET */
+
+/* CUSTOM FONTS */
+@font-face {
+  font-family: "norsebold";
+  src:
+    url("/fonts/norsebold.woff2") format("woff2"),
+    url("/fonts/norsebold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 
+*{outline: 1px solid red;} */
+
+body {
+  height: 100vh;
+  display: flex;
+}
+
+.left-panel {
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  background-image: url("/img/halie-west-25xggax4bSA-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  color: white;
+  text-align: center;
+}
+
+.left-panel .logo {
+  background-color: hsla(0, 0%, 0%, 0.5);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "norsebold";
+  font-size: 5rem;
+  padding: 1rem;
+  margin-top: 8rem;
+}
+
+.left-panel img {
+  height: 8rem;
+  width: auto;
+}
+
+.left-panel .img-credits {
+  margin-top: auto;
+}
+
+.right-panel {
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  background-color: wheat;
+}
+
+/* UPPER SECTION STYLES */
+
+.top-section {
+  padding: 2rem 3rem;
+}
+
+.top-section p {
+  width: 80%;
+}
+
+/* FORM SECTION STYLES */
+.form-section {
+  padding: 2rem 3rem;
+  padding: 0;
+}
+
+.form-card {
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  padding: 3rem;
+}
+
+.form-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 3rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 0.3rem;
+}
+
+.form-group label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #444;
+}
+
+.form-group input {
+  height: 2.2rem;
+  padding: 0 0.75rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 4px rgba(59, 130, 246, 0.4);
+}
+
+.button-container {
+  padding-left: 3rem;
+}
+
+.signup-form button {
+  margin-top: 1rem;
+  width: fit-content;
+  padding: 0.9rem 3rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #596d48;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* BOTTOM SECTION STYLES */
+
+.bottom-section {
+  padding: 2rem 3rem;
+}
