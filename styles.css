@@ -84,6 +84,7 @@ h6 {
 body {
   height: 100vh;
   display: flex;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .left-panel {
@@ -100,19 +101,19 @@ body {
 }
 
 .left-panel .logo {
-  background-color: hsla(0, 0%, 0%, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem 0;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: "norsebold";
   font-size: 5rem;
-  padding: 1rem;
   margin-top: 8rem;
 }
 
 .left-panel img {
-  height: 8rem;
+  height: 7rem;
   width: auto;
 }
 
@@ -120,50 +121,59 @@ body {
   margin-top: auto;
 }
 
+.img-credits {
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
 .right-panel {
   width: 70vw;
   display: flex;
   flex-direction: column;
-  background-color: wheat;
+  background-color: #f9fafb;
 }
 
 /* UPPER SECTION STYLES */
 
 .top-section {
-  padding: 2rem 3rem;
+  padding: 2.5rem 3rem;
+  margin-bottom: 0.75rem;
 }
+
 
 .top-section p {
-  width: 80%;
+  width: 65%;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
 }
-
 /* FORM SECTION STYLES */
 .form-section {
-  padding: 2rem 3rem;
   padding: 0;
+  margin-bottom: 0.75rem;
 }
 
 .form-card {
   background-color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
-  padding: 3rem;
+  padding: 2rem 3rem;
 }
 
 .form-title {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   font-weight: 600;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
 }
-
 .signup-form {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: 0;
 }
 
 .form-row {
   display: flex;
   gap: 3rem;
+  margin-bottom: 1rem;
 }
 
 .form-group {
@@ -174,18 +184,24 @@ body {
 }
 
 .form-group label {
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   color: #444;
+  margin-bottom: 0.2rem;
 }
 
 .form-group input {
-  height: 2.2rem;
+  height: 2rem;
   padding: 0 0.75rem;
   border: 1px solid #e5e7eb;
   border-radius: 4px;
   font-size: 1rem;
+}
+
+input[type="password"]:focus:invalid {
+  border-color: #dc2626;
+  box-shadow: 0 0 4px rgba(220, 38, 38, 0.3);
 }
 
 .form-group input:focus {
@@ -201,9 +217,9 @@ body {
 .signup-form button {
   margin-top: 1rem;
   width: fit-content;
-  padding: 0.9rem 3rem;
+  padding: 0.8rem 2.5rem;
   border: none;
-  border-radius: 8px;
+  border-radius: 6px;
   background-color: #596d48;
   color: white;
   font-size: 1rem;
@@ -214,5 +230,15 @@ body {
 /* BOTTOM SECTION STYLES */
 
 .bottom-section {
-  padding: 2rem 3rem;
+  padding: 1rem 3rem 1.5rem;
+}
+
+.bottom-section a {
+  color: #596d48;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.bottom-section a:hover {
+  text-decoration: underline;
 }
